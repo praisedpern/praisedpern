@@ -1,4 +1,8 @@
-### Hi there 👋
+### Hi, and thanks for visiting my profile. 👋
+
+### I’m a lifelong computer enthusiast, and long-time Linux dabbler. I created my profile both so I can learn git, and keep track of the projects I'm working on with my friends.
+
+### - 🌱 I’m currently learning git and node.js, and brushing up on shell scripting.
 
 <!--
 **praisedpern/praisedpern** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
