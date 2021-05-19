@@ -1,11 +1,23 @@
-### Hi, and thanks for visiting my profile. 👋
+## Hi, and thanks for visiting my profile. 👋
 
-### I’m a lifelong computer enthusiast, and long-time Linux dabbler. I created my profile both so I can learn git, and keep track of the projects I'm working on with my friends.
+## My [personal repo](https://github.com/praisedpern/praisedpern/) is where I
+throw my dotfiles so I can quickly set them up on new machines/installs. Feel
+free to take a look/clone/fork them.
 
-### - 🌱 I’m currently learning git and node.js, and brushing up on shell scripting.
+# init.vim
+- It's made for use with nvim
+- Please note my init.vim uses 'set exrc' which is 
+[considered insecure](https://www.google.com/search?q=set+exrc) and is deprecated in nvim
+### I'm on a bit of an vim discovery journey and I took inspiration from videos
+  by
+  [Luke Smith](https://odysee.com/@Luke:7), 
+  [Mental Outlaw](https://odysee.com/@AlphaNerd:8) and 
+  [ThePrimeagen](https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw)
+  to customise my setup.
 
 <!--
-**praisedpern/praisedpern** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**praisedpern/praisedpern** is a ✨ _special_ ✨ repository because its
+`README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
