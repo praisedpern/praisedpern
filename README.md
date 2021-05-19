@@ -14,7 +14,7 @@ by
 [Luke Smith](https://odysee.com/@Luke:7), 
 [Mental Outlaw](https://odysee.com/@AlphaNerd:8) and 
 [ThePrimeagen](https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw)
-to customise my setup.
+to customise this setup.
 
 <!--
 **praisedpern/praisedpern** is a ✨ _special_ ✨ repository because its
