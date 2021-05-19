@@ -1,10 +1,18 @@
 " praisedpern's custom init.vim
 
-" TO DO: I'd like a sequence at the top of this file where first it checks for
-" to see if plug is installed, then installs plug if it hasn't been already.
-" This will be handy for installing nvim setup quickly on other machines. I'd
-" also like to get this script to install the plugins that are listed if they
-" haven't been already.
+" Detects if vim is running from Windows. If so, sets shell to PowerShell and
+" the flags to make it work as per shell-powershell. Then installs vim-plug 
+" https://github.com/junegunn/vim-plug via PowerShell method detailed in their
+" README.md
+if has('win32')
+    set shell=powershell shellpipe=\| shellxquote= 
+	set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
+	set shellredir=\|\ Out-File\ -Encoding\ UTF8
+    let l = string(filter(split(execute(':scriptname'), "\n"), 'v:val =~? "plug.vim"'))
+    if l !~# "plug.vim"
+        call system('iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |` ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force')
+    endif
+endif
 
 " tabs and indenting
 set tabstop=4 softtabstop=4
@@ -27,15 +35,15 @@ set cmdheight=2
 set nohlsearch
 set incsearch
 
-" retain hidden buffer (default it to abandon)
+" retain hidden buffer (default is to abandon)
 set hidden
 
 " searches aren't case sensitive unless a capital letter is included
 set smartcase
 
-" writebackup makes a backup of a file before it is overwritten, deletes the
-" backup on successful completion; undodir sets the directory where undo files
-" are saved, . being the working directory
+" writebackup makes a backup of a file before it is overwritten, then deletes 
+" the backup on successful completion; undodir sets the directory where undo 
+" files are saved, "." being the working directory
 set writebackup
 set undodir=.
 
@@ -60,9 +68,12 @@ augroup toggleLineNumber
     autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
 augroup END
 
+" Opens files in the place where you were last
 augroup saveLineNumber
     autocmd BufReadPost *
         \ if line("'\'") > 0 && line("'\'") <= line("$") |
         \   exe "normal! g'\"" |
         \ endif
 augroup END
+
+

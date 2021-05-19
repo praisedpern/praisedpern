@@ -8,6 +8,7 @@ free to take a look/clone/fork them.
 - It's made for use with nvim
 - Please note my init.vim uses 'set exrc' which is 
 [considered insecure](https://www.google.com/search?q=set+exrc) and is deprecated in nvim
+
 I'm on a bit of an vim discovery journey and I took inspiration from videos
 by
 [Luke Smith](https://odysee.com/@Luke:7), 
