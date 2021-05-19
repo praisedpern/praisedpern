@@ -1,19 +1,19 @@
-## Hi, and thanks for visiting my profile. 👋
+Hi, and thanks for visiting my profile. 👋
 
-## My [personal repo](https://github.com/praisedpern/praisedpern/) is where I
+My [personal repo](https://github.com/praisedpern/praisedpern/) is where I
 throw my dotfiles so I can quickly set them up on new machines/installs. Feel
 free to take a look/clone/fork them.
 
-# init.vim
+### init.vim
 - It's made for use with nvim
 - Please note my init.vim uses 'set exrc' which is 
 [considered insecure](https://www.google.com/search?q=set+exrc) and is deprecated in nvim
-### I'm on a bit of an vim discovery journey and I took inspiration from videos
-  by
-  [Luke Smith](https://odysee.com/@Luke:7), 
-  [Mental Outlaw](https://odysee.com/@AlphaNerd:8) and 
-  [ThePrimeagen](https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw)
-  to customise my setup.
+I'm on a bit of an vim discovery journey and I took inspiration from videos
+by
+[Luke Smith](https://odysee.com/@Luke:7), 
+[Mental Outlaw](https://odysee.com/@AlphaNerd:8) and 
+[ThePrimeagen](https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw)
+to customise my setup.
 
 <!--
 **praisedpern/praisedpern** is a ✨ _special_ ✨ repository because its
