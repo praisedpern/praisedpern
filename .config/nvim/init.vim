@@ -25,6 +25,10 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set wrap linebreak nolist
+set textwidth=80
+set wrapmargin=80
+set formatoptions=cqja
 
 " look for .nvimrc in current directory on startup (for instance if you want
 " custom init for specific project folders) 
@@ -62,6 +66,7 @@ set termguicolors
 " load plugins
 call plug#begin()
     Plug 'gruvbox-community/gruvbox'
+    Plug 'shime/vim-livedown'
 call plug#end()
 
 " set colorscheme
