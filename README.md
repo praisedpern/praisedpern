@@ -1,3 +1,5 @@
+<!-- Version 1 :
+
 Hi, and thanks for visiting my profile. 👋
 
 My [personal repo](https://github.com/praisedpern/praisedpern/) is where I
@@ -16,7 +18,8 @@ by
 [ThePrimeagen](https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw)
 to customise this setup.
 
-<!--
+Following is default:
+
 **praisedpern/praisedpern** is a ✨ _special_ ✨ repository because its
 `README.md` (this file) appears on your GitHub profile.
 
