@@ -4,10 +4,10 @@
 " the flags to make it work as per shell-powershell. Then installs vim-plug 
 " https://github.com/junegunn/vim-plug via PowerShell method detailed in their
 " README.md
-if has('win32')
+if has('win32') 
     set shell=powershell shellpipe=\| shellxquote= 
-	set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
-	set shellredir=\|\ Out-File\ -Encoding\ UTF8
+    set shellcmdflag=-NoLogo\ -NoProfile\ -ExecutionPolicy\ RemoteSigned\ -Command
+    set shellredir=\|\ Out-File\ -Encoding\ UTF8 
 endif
 
 let l = string(filter(split(execute(':scriptname'), "\n"), 'v:val =~? "plug.vim"'))
@@ -28,7 +28,7 @@ set smartindent
 set wrap linebreak nolist
 set textwidth=80
 set wrapmargin=80
-set formatoptions=cqja
+set formatoptions=cqj
 
 " look for .nvimrc in current directory on startup (for instance if you want
 " custom init for specific project folders) 
@@ -66,11 +66,17 @@ set termguicolors
 " load plugins
 call plug#begin()
     Plug 'gruvbox-community/gruvbox'
-    Plug 'shime/vim-livedown'
+    Plug 'vimoutliner/vimoutliner'
+    Plug 'vimwiki/vimwiki'
+    Plug 'mattn/calendar-vim'
+    Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " set colorscheme
 colorscheme gruvbox
+
+" set background to transparent
+hi Normal guibg=NONE ctermbg=NONE
 
 " switches to absolute line numbers during insert mode
 augroup toggleLineNumber
